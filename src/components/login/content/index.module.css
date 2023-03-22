@@ -1,0 +1,56 @@
+h1 {
+  font-family: "Titillium Web";
+}
+
+.formContainer {
+  width: 100%;
+  flex-grow: 1;
+  margin: auto 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.formContainer > *:not(:first-child) {
+  max-width: 38.5rem;
+}
+.description {
+  margin-bottom: calc(4rem - 1.6rem);
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.passwordLabel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.passwordLabel > * {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.submitButton {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
