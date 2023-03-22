@@ -1,0 +1,87 @@
+input {
+  width: 100%;
+
+  background: #ffffff;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  color: var(--gray-800);
+
+  outline: none;
+  border: none;
+}
+
+input::placeholder {
+  color: var(--gray-400);
+}
+
+.inputContainer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  color: var(--gray-800);
+}
+
+.input {
+  width: 100%;
+  padding: 1.6rem 1.2rem;
+  margin-top: 0.8rem;
+
+  background: #ffffff;
+
+  border: 0.1rem solid var(--gray-200);
+  border-radius: 0.4rem;
+
+  display: flex;
+}
+
+.input:hover,
+.input:focus-within {
+  border: 0.1rem solid var(--purple);
+}
+
+.input:has(input:disabled) {
+  color: var(--gray-200);
+  border-color: var(--gray-200);
+  cursor: not-allowed;
+}
+
+.input:has(input:disabled) > * {
+  cursor: not-allowed;
+}
+
+.eyeContent {
+  background: none;
+  border: none;
+  outline: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.input.error {
+  border-color: var(--error);
+}
+
+.error {
+  color: var(--error);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
